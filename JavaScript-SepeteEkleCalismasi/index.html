@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sepete Ekle</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="javascriptcodes.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2 class="card-title">Ürünler</h2>
+                    </div>
+                    <div class="card-body col-md d-flex">
+                        <div class="card col-md-3">
+                            <img src="https://cdn.dsmcdn.com/ty188/product/media/images/20211006/20/141661319/226355819/1/1_org_zoom.jpg" class="card-img-top" alt="Hummel T-shirt">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between md-9">
+                                    <h5 class="card-title">HUMMEL AKIRA T-SHIRT</h5>
+                                </div>
+                                <div class="d-flex justify-content-between md-3 text-warning">
+                                    <h5 class="card-text">129,95 TL</h5>
+                                </div>
+                                <a href="#" class="btn btn-primary mt-2" onclick="addToCard(1), ToplamTutar()">Sepete Ekle</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-3">
+                            <img src="https://cdn.dsmcdn.com/ty166/product/media/images/20210831/15/124279916/235243183/0/0_org_zoom.jpg" class="card-img-top" alt="Hummel T-shirt">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between md-9">
+                                    <h5 class="card-title">Jack & Jones Erkek Kapüşonlu Kürklü Mont</h5>
+                                </div>
+                                <div class="d-flex justify-content-between md-3 text-warning">
+                                    <h5 class="card-text">849,99 TL</h5>
+                                </div>
+                                <a href="#" class="btn btn-primary mt-2" onclick="addToCard(2), ToplamTutar()">Sepete Ekle</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-3">
+                            <img src="https://cdn.dsmcdn.com/ty146/product/media/images/20210713/21/110199135/16646238/1/1_org_zoom.jpg" class="card-img-top" alt="Hummel T-shirt">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between md-9">
+                                    <h5 class="card-title">Adidas Erkek Günlük Ayakkabı</h5>
+                                </div>
+                                <div class="d-flex justify-content-between md-3 text-warning">
+                                    <h5 class="card-text">381,60 TL</h5>
+                                </div>
+                                <a href="#" class="btn btn-primary mt-2" onclick="addToCard(3), ToplamTutar()">Sepete Ekle</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-3">
+                            <img src="https://cdn.dsmcdn.com/ty164/product/media/images/20210825/21/122558210/6402684/3/3_org_zoom.jpg" class="card-img-top" alt="Hummel T-shirt">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between md-9">
+                                    <h5 class="card-title">Hugo Boss The Scent Edt 100 ml Erkek Parfümü</h5>
+                                </div>
+                                <div class="d-flex justify-content-between md-3 text-warning">
+                                    <h5 class="card-text">1093 TL</h5>
+                                </div>
+                                <a href="#" class="btn btn-primary mt-2" onclick="addToCard(4), ToplamTutar()">Sepete Ekle</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Sepet</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul id="sepetul" class="list-group">
+                            <!--<li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary rounded-pill">0</span>
+                                A list item
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <h5>Toplam Tutar: </h5>
+                        <h5 id="toplamfiyat">0 TL</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
